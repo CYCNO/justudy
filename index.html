@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Added Logo-->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!--Adding animate.style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--added tailwind css-->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!--Adding Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Adding CSS-->
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(75, 135, 230);
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgb(42, 108, 214);
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #header {
+            background-color: #2f72f0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 13%;
+            width: 100%;
+            border-radius: 0 0 95% 95%/0 0 100% 100%;
+            transform: scaleX(1.0)
+        }
+
+        #frame {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+
+        #frame2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #sect {
+            position: relative;
+            display: flex;
+
+        }
+
+        #ob {
+            position: absolute;
+            left: 900px;
+            display: flex;
+        }
+
+        #top {
+            position: absolute;
+            z-index: 100;
+        }
+
+        hr {
+            margin: 0rem 5rem 0rem 5rem;
+        }
+
+        .widh {
+            width: 10rem;
+        }
+
+        #top2 {
+            z-index: 120;
+        }
+    </style>
+
+    <title>JuStudy</title>
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <section class="h-screen" id="header">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="/" class="flex title-font font-medium items-center mx-8 text-gray-900 mb-4 md:mb-0">
+                <span class="text-white ml-3 text-2xl h-8 animate-bounce hover:text-black-400">
+                    <span class="text-black">Ju</span>Study
+                </span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
+                    <span
+                        class="text-black ml-3 text-xl mx-8 h-8 animate hover:text-teal-400 cursor-pointer">Home</span>
+                </a>
+                <a href="javascript:scroll()"
+                    class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <span class="text-black ml-3 text-xl mx-8 h-8  hover:text-teal-400 cursor-pointer">Services</span>
+                </a>
+                <a onclick="showabout()" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <span class=" text-black ml-2 text-xl mx-5 h-8 hover:text-teal-400 cursor-pointer">About Me</span>
+                </a>
+
+            </nav>
+        </div>
+    </section>
+
+
+
+
+    <!-- Upper Content-->
+    <section class="pl-5 mt-5 ">
+        <div class="bg-slate-200">
+            <header class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center rounded-xl shadow-2xl">
+                <div class="px-10 w-4/5 md:mt-10" height=" 400" width="400">
+                    <h1 class=" text-3xl">New Era Of Learning With JuStudy</h1>
+                    We Are The Best And Most Affordable One To Choose For Your Study.Our Mission Is To Make Study More
+                    Fun And Also The Most Interseting.
+
+                    <div class="py-3">
+                        <button onclick="popup()"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-xl">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+                <div class=" w-2/5 ">
+                    <img class="" height="400" width="400" src="images/Untitled design.png" alt="" srcset="">
+
+                </div>
+            </header>
+        </div>
+    </section>
+    <!-- Info Content-->
+    <section id="sect" class="p-10 min-h-screen items-center justify-between bg-blue-600 mt-5">
+        <svg id="frame2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,64L60,69.3C120,75,240,85,360,85.3C480,85,600,75,720,96C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container md:flex-row flex-col mx-auto flex md:flex md:justify-between items-center">
+            <div class="md:px-8 md:w-3/5 sm:w-5/6" height="400" width="400">
+                <h1 class="text-2xl">Our Best Course Only In ₹698/- For Class 10 Students.</h1>
+                Our Most Valuable Course For Class 10 students Is Out Now With Most Affordable Price. We Completed The
+                Whole Course Of Class 10.
+
+                <div class="py-3">
+                    <button onclick="popup()" id="top"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-xl">
+                        Enroll Now
+                    </button>
+                </div>
+
+            </div>
+            <div id="ob" class="">
+                <img class="w-3/5 " height="300" widht="300" src="images/justudy.png" alt="course">
+            </div>
+
+
+            <svg id="frame" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,192L60,202.7C120,213,240,235,360,240C480,245,600,235,720,218.7C840,203,960,181,1080,186.7C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+
+        </div>
+
+
+    </section>
+
+    <!--Services Content-->
+    <section class="pl-5 mt-5 bg-grey">
+        <div class="bg-slate-200 justify-center items-center rounded-xl shadow-2xl">
+            <div class="bg-white container text-center p-10">
+                <h1 class="text-4xl text-center text-blue-600 animate-bounce">OUR SERVICES</h1>
+                <span class="inline-flex h-1 widh rounded bg-blue-600 mb-3"></span>
+
+
+            </div>
+            <div class="">
+                <section class="text-gray-600 body-font">
+                    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div
+                            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Our All Video Is
+                                <br class="hidden lg:inline-block">Online To Watch
+                            </h1>
+                            <p class="mb-8 leading-relaxed">That Means you can watch our video anytime anywhere Because
+                                of that you did not need to go anywhere for education you can able to learn from home
+                                itself. </p>
+                        </div>
+                        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                            <img class="object-cover object-center rounded" alt="justudy"
+                                src="images/undraw_Tutorial_video_re_wepc-removebg-preview.png">
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="text-gray-600 body-font">
+                    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                            <img class="object-cover object-center rounded" alt="justudy"
+                                src="images/classroom-removebg-preview.png">
+                        </div>
+                        <div
+                            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">It Feel Like
+                                <br class="hidden lg:inline-block">You Are In Classroom
+                            </h1>
+                            <p class="mb-8 leading-relaxed">If you will watch our lecture you will feel you are in
+                                classroom infront of teachers. We made our courses that it will feel like you are in the
+                                classroom.We make sure that you like it.</p>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="text-gray-600 body-font">
+                    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div
+                            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">You Have Doubts
+                                <br class="hidden lg:inline-block">We Have Solutions
+                            </h1>
+                            <p class="mb-8 leading-relaxed">If you have any doubt or problems in any subject so you can
+                                ask to direct teachers. We make every sunday doubt classes so feel free to ask any
+                                doubts in any subjects.</p>
+                        </div>
+                        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                            <img class="object-cover object-center rounded" alt="justudy"
+                                src="images/undraw_Questions_re_1fy7-removebg-preview.png">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </section>
+    <!--techers info-->
+    <section class="py-6 w-full">
+        <div class="bg-white container text-center mt-10 p-10">
+            <h1 class="text-4xl text-center text-blue-600 animate-bounce">OUR TEACHERS</h1>
+            <span class="inline-flex h-1 widh rounded bg-blue-600 mb-3"></span>
+        </div>
+
+
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/3">
+                    <div class="bg-gray-100 px-8 pt-4 pb-25 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Bhawandar Sir</h1>
+                        <p class="leading-relaxed mb-3">An IIT student.Teaching kids from 7 years. He is great teacher
+                            in science.</p>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                    <div class="bg-gray-100 px-8 pt-4 pb-25 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Tabahi Sir</h1>
+                        <p class="leading-relaxed mb-3">NIT teacher. Teaching kids from 3 years. He is great teacher in
+                            social science.</p>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                    <div class="bg-gray-100 px-8 pt-4 pb-25 rounded-lg overflow-hidden text-center relative">
+                        <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Gajab Sir</h1>
+                        <p class="leading-relaxed mb-3">IIIT teacher. Teaching kids from 3 years. He is great teacher in
+                            mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-grey-600 rounded flex items-center body-font -py-4">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="/" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <span class="ml-3 text-xl">JuStudy</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2022 —
+                <a href="https://github.com/CYCNO" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@CYCNO</a>
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!--popup/modal of enroll-->
+    <div id="top2"
+        class=" modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+        <!-- modal -->
+        <div
+            class="modalbody animate__animated bg-white animate__animated animate__bounceIn rounded shadow-lg md:w-32 lg:w-1/4">
+            <!-- modal header -->
+            <div class="px-4 py-2 flex justify-between">
+                <h3 class="font-semibold text-lg items-center">Success</h3>
+                <button onclick="repopup()" class="text-black close-modal">
+                    <img width="20" height="20" src="https://img.icons8.com/small/72/multiply.png" alt="">
+                </button>
+            </div>
+            <!-- modal body -->
+            <div class="p-3 flex justify-center items-center ">
+                <img class="justify-center items-center" src="images/confirm.jpg" height="200" width="200" alt="">
+            </div>
+            <div class="">
+                <h1 class="text-center font-semibold text-4xl">Course Activated</h1>
+            </div>
+            <div class="p-3 justify-center items-center text-center">
+                Your course is now activated. Thanks For Enrolling In Our Course. May you will not disappoint.
+            </div>
+            <div class="flex justify-center items-center w-100 p-3">
+
+                <button onclick="repopup()"
+                    class="bg-blue-600 hover:bg-blue-700 px-5 py-3 px-12 rounded text-white">Close</button>
+            </div>
+        </div>
+    </div>
+    <!--about me-->
+    <div id="top2"
+        class=" about h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+        <!-- modal -->
+        <div class=" animate__animated bg-white animate__animated animate__bounceIn rounded shadow-lg md:w-32 lg:w-1/4">
+            <!-- modal header -->
+            <div class="px-4 py-2 flex justify-between">
+                <h3 class="font-semibold text-lg items-center">About me</h3>
+                <button onclick="reabout()" class="text-black close-modal">
+                    <img width="20" height="20" src="https://img.icons8.com/small/72/multiply.png" alt="">
+                </button>
+            </div>
+            <!-- modal body -->
+
+            <div class="p-3">
+                <h1 class="text-center font-semibold text-4xl">About Me</h1>
+            </div>
+            <div class="p-3 justify-center items-center text-center">
+                I am 15 year old and study in class 10,etc.
+            </div>
+            <div class="flex justify-center items-center w-100 p-3">
+
+                <button onclick="reabout()"
+                    class="bg-blue-600 hover:bg-blue-700 px-5 py-3 px-12 rounded text-white">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<!-- JavaScript -->
+<script>
+    // for scroll down
+    function scroll() {
+        window.scrollTo({
+            top: 1200,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
+    //popup function
+    const modal = document.querySelector(".modal")
+
+    function popup() {
+        modal.classList.remove("hidden")
+    }
+    function repopup() {
+        modal.classList.add("hidden")
+    }
+    //about me popup function
+    const about = document.querySelector(".about")
+
+    function showabout() {
+        about.classList.remove("hidden")
+    }
+    function reabout() {
+        about.classList.add("hidden")
+    }
+</script>
+
+</html>
+
+<!-- AUTHOR: CYCNO-->
+<!-- github - https://github.com/CYCNO-->>
+<!-- utility used tailwind -->
+<!-- made in 1/7/2022-->
+<!-- finished in 5/7/2022-->
+<!-- made for firsr thapa codefest -->
